@@ -48,6 +48,15 @@ services:
     depends_on:
       - nginx
 
+  node-exporter:
+    image: prom/node-exporter:latest
+    restart: unless-stopped
+    command:
+      - '--path.rootfs=/host'
+    volumes:
+      - '/:/host:ro'
+    pid: host
+
 volumes:
   mysql_data:
   prometheus_data:
