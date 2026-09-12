@@ -1,5 +1,12 @@
 services:
   nginx:
-  image: nginx:latest
-  ports:
-    - "8080:80"
+    image: nginx:latest
+    ports:
+      - "8080:80"
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  db:
+    image: mysql:8.4
