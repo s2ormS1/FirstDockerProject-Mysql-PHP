@@ -1,0 +1,130 @@
+.pay-btn{
+    height:38px;
+
+    padding:0 16px;
+
+    border:none;
+    border-radius:14px;
+
+    background:#0d4b3f;
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.account-container{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+.account-card{
+    flex:1;
+    min-height:400px;
+    padding:30px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.45);
+    backdrop-filter:blur(14px);
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.15);
+}
+
+.account-card h2{
+    margin-bottom:20px;
+    color:#0d4b3f;
+}
+
+.account-card table{
+    width:100%;
+}
+
+.account-card td{
+    padding:10px;
+}
+
+.account-card input{
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+    border:none;
+    background:white;
+}
+
+.pay-btn:hover{
+    transform:translateY(-2px);
+}
+
+.pay-btn:active{
+    transform:scale(.96);
+}
+
+.booking-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:90px;
+    padding:15px 20px;
+    margin-bottom:15px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,0.6);
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.08);
+}
+
+.booking-left{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.booking-right{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.booking-right form{
+    margin:0;
+}
+
+.booking-more{
+    height:38px;
+
+    padding:0 16px;
+    border:none;
+    border-radius:10px;
+
+    background:#d6d6d6;
+    color:#333;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.booking-more:hover{
+    transform:translateY(-2px);
+}
+
+.booking-more:active{
+    transform:scale(.96);
+}
+
+.booking-title{
+    font-size:24px;
+    font-weight:700;
+    color:#0d4b3f;
+}
+
+.booking-status{
+    font-size:16px;
+}
